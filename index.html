@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hidefq</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <video autoplay loop muted playsinline id="bg-video">
+        <source src="bg-video/KC Accidental.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+    <button id="mute-toggle" style="position: fixed; top: 20px; right: 20px; z-index: 10; background: none;">Unmute</button>
+    <div class="main-header">
+        <nav>   
+            <ul>
+                <div class="nav-1">
+                    <li><a href="#about">About Me</a></li>
+                </div>
+                <div class="nav-2">
+                    <li><a href="#music">Music</a></li>
+                </div>
+                <div class="nav-3">
+                    <li><a href="#photography">Photography</a></li>
+                </div>
+                <div class="nav-4">
+                    <li><a href="#graphicdesign">Graphic Design</a></li>
+                </div>
+                <div class="nav-5">
+                    <li><a href="#professionalhistory">Professional History</a></li>
+                </div>
+                <div class="nav-6">
+                    <li><a href="#classworkhighlights">Classwork Highlights</a></li>
+                </div>
+            </ul>
+        </nav>
+        
+        <div class="header-text">
+            <h1 class="homepageHeader">The Hidef_Q Site</h1>
+            <h3>Designed & Coded By Quincy Bhattacharjee</h3>
+        </div>
+    </div>
+</body>
+<script>
+    document.getElementById('mute-toggle').addEventListener('click', function() {
+        const video = document.getElementById('bg-video');
+        video.muted = !video.muted;
+        this.textContent = video.muted ? 'Unmute' : 'Mute';
+    });
+</script>
+
+</html>
