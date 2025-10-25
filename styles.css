@@ -123,7 +123,7 @@ nav a {
 }
 
 @media (max-width: 900px) {
-    .mainheader {
+    .main-header {
         flex-direction: column;
         align-items: stretch;
         justify-content: flex-start;
@@ -134,14 +134,30 @@ nav a {
         margin-left: 0;
         min-height: auto;
         justify-content: center;
+        width: 100%;
+    }
+    nav ul {
+        width: 100%;
+        align-items: center;
+    }
+    nav li {
+        font-size: 1em;
+        padding: 8px 16px;
+        margin-bottom: 8px;
     }
     .header-text {
+        order: -1;
         align-items: center;
         text-align: center;
-        margin-top: 30px;
+        margin-top: 0px;
+        margin-bottom: 30px;
     }
     h1 {
-        font-size: 2.5em;
+        font-size: 2em;
+        margin-right: 0;
+    }
+    h3 {
+        font-size: 1em;
         margin-right: 0;
     }
 }
